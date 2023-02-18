@@ -3,7 +3,7 @@
 This is the offcial implementation of paper 'MorphGANFormer: Transformer-based Face Morphing and De-Morphing'.
 Code will be coming soon.
 
-![arch](figure/Morph_latentvs2.png)
+![arch](Morph_latentvs2.png)
 
 
 
