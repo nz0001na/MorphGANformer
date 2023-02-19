@@ -1,4 +1,4 @@
-# MorphGANformer
+# MorphGANFormer
 
 This is the offcial implementation of paper 'MorphGANFormer: Transformer-based Face Morphing and De-Morphing'.
 Code will be coming soon.
