@@ -12,8 +12,8 @@ This repository contains the implementation of:
 
 ### Link: 
 
-[[PDF]]()
-[[Arxiv]]()
+[[PDF]](https://arxiv.org/pdf/2302.09404.pdf)
+[[Arxiv]](https://arxiv.org/abs/2302.09404)
 
 
 # Introduction
