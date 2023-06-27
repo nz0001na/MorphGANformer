@@ -1,0 +1,94 @@
+{
+  "run_dir": "results/exp-000",
+  "vis": true,
+  "total_kimg": 25000,
+  "printname": "exp",
+  "batch_size": 32,
+  "batch_gpu": 4,
+  "allow_tf32": true,
+  "cudnn_benchmark": true,
+  "num_gpus": 1,
+  "metrics": [
+    "fid"
+  ],
+  "truncation_psi": 0.65,
+  "cG": {
+    "class_name": "training.networks.Generator",
+    "reg_interval": 4,
+    "opt_args": {
+      "class_name": "torch.optim.Adam",
+      "lr": 0.002,
+      "betas": [
+        0,
+        0.99
+      ],
+      "eps": 1e-08
+    },
+    "mapping_kwargs": {
+      "num_heads": 1
+    },
+    "synthesis_kwargs": {
+      "style": true,
+      "local_noise": true,
+      "num_heads": 1,
+      "start_res": 0,
+      "end_res": 8,
+      "integration": "add",
+      "kmeans_iters": 1,
+      "pos_type": "sinus",
+      "pos_init": "uniform",
+      "pos_directions_num": 2
+    },
+    "z_dim": 512,
+    "w_dim": 512,
+    "k": 1,
+    "component_dropout": 0.0
+  },
+  "cD": {
+    "class_name": "training.networks.Discriminator",
+    "reg_interval": 16,
+    "opt_args": {
+      "class_name": "torch.optim.Adam",
+      "lr": 0.002,
+      "betas": [
+        0,
+        0.99
+      ],
+      "eps": 1e-08
+    },
+    "mapping_kwargs": {},
+    "block_kwargs": {},
+    "epilogue_kwargs": {}
+  },
+  "loss_args": {
+    "class_name": "training.loss.StyleGAN2Loss",
+    "g_loss": "logistic_ns",
+    "d_loss": "logistic",
+    "r1_gamma": 10,
+    "pl_weight": 0.0,
+    "style_mixing": 0.9,
+    "component_mixing": 0.0
+  },
+  "dataset_args": {
+    "class_name": "training.dataset.ImageFolderDataset",
+    "path": "/home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/images/2_raw_tf",
+    "max_items": null,
+    "resolution": 256,
+    "ratio": 1.0,
+    "mirror_augment": null,
+    "loader_args": {
+      "num_workers": 4,
+      "pin_memory": true,
+      "prefetch_factor": 2
+    }
+  },
+  "vis_args": {
+    "run_dir": "results/exp-000",
+    "keep_samples": true,
+    "num_heads": 1,
+    "vis_types": [
+      "ltnts"
+    ],
+    "k": 1
+  }
+}

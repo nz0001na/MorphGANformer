@@ -1,0 +1,73 @@
+[1m[37mLoading training set...[0m
+[1m[31mError: Dataset folder /home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/images/2_raw_tf///home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/images/2_raw_tf/256//256 doesn't exists.[0m
+[1m[37mLoading training set...[0m
+[1m[31mError: Dataset folder /home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/images/2_raw_tf//256//256 doesn't exists.[0m
+[1m[37mLoading training set...[0m
+[1mNum images: [1m[34m304[0m[0m
+[1mImage shape: [1m[34m[3, 256, 256][0m[0m
+[1mLabel shape: [1m[34m[0][0m[0m
+Traceback (most recent call last):
+  File "run_network.py", line 597, in <module>
+    main()
+  File "run_network.py", line 594, in main
+    launch_processes(config)
+  File "run_network.py", line 400, in launch_processes
+    subprocess_fn(rank = 0, args = config, temp_dir = temp_dir)
+  File "run_network.py", line 388, in subprocess_fn
+    training_loop.training_loop(rank = rank, **args)
+  File "/home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/training/training_loop.py", line 358, in training_loop
+    G, D, Gs = load_nets(resume_pkl, nets, device, log)                           # Resume from existing pickle
+TypeError: 'NoneType' object is not iterable
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/na/anaconda3/envs/gansformer_pytorch/lib/python3.6/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/na/anaconda3/envs/gansformer_pytorch/lib/python3.6/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 10033) is killed by signal: Terminated. 
+[1m[37mLoading training set...[0m
+[1mNum images: [1m[34m304[0m[0m
+[1mImage shape: [1m[34m[3, 256, 256][0m[0m
+[1mLabel shape: [1m[34m[0][0m[0m
+Traceback (most recent call last):
+  File "run_network.py", line 597, in <module>
+    main()
+  File "run_network.py", line 594, in main
+    launch_processes(config)
+  File "run_network.py", line 400, in launch_processes
+    subprocess_fn(rank = 0, args = config, temp_dir = temp_dir)
+  File "run_network.py", line 388, in subprocess_fn
+    training_loop.training_loop(rank = rank, **args)
+  File "/home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/training/training_loop.py", line 358, in training_loop
+    G, D, Gs = load_nets(resume_pkl, nets, device, log)                           # Resume from existing pickle
+TypeError: 'NoneType' object is not iterable
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/na/anaconda3/envs/gansformer_pytorch/lib/python3.6/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/na/anaconda3/envs/gansformer_pytorch/lib/python3.6/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 10099) is killed by signal: Terminated. 
+[1m[37mLoading training set...[0m
+[1mNum images: [1m[34m304[0m[0m
+[1mImage shape: [1m[34m[3, 256, 256][0m[0m
+[1mLabel shape: [1m[34m[0][0m[0m
+Traceback (most recent call last):
+  File "run_network.py", line 597, in <module>
+    main()
+  File "run_network.py", line 594, in main
+    launch_processes(config)
+  File "run_network.py", line 400, in launch_processes
+    subprocess_fn(rank = 0, args = config, temp_dir = temp_dir)
+  File "run_network.py", line 388, in subprocess_fn
+    training_loop.training_loop(rank = rank, **args)
+  File "/home/na/1_Face_morphing/1_code/2_morphing/5_gansformer-main_V2_256/pytorch_version/training/training_loop.py", line 358, in training_loop
+    G, D, Gs = load_nets(resume_pkl, nets, device, log)                           # Resume from existing pickle
+TypeError: 'NoneType' object is not iterable
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/na/anaconda3/envs/gansformer_pytorch/lib/python3.6/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/na/anaconda3/envs/gansformer_pytorch/lib/python3.6/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 10152) is killed by signal: Terminated. 
