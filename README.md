@@ -1,6 +1,8 @@
 # MorphGANFormer
 This is the basic implementation of work 'MorphGANFormer: Transformer-based Face Morphing and De-Morphing'.
 
+Stay tuned for the updating !!!
+
 ![arch](fig/Morph_latentvs2.png)
 
 ### Link: 
